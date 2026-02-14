@@ -52,6 +52,21 @@
             border-radius: 10px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
         }
+
+        .photo-row {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .photo-row img {
+            flex: 1 1 240px;
+            max-width: 320px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
         
         .bio {
             color: #333;
@@ -130,7 +145,10 @@
         <p class="subtitle">Welcome to my website!</p>
         
         <div class="photo">
-            <img src="snapchat.jpg" alt="George's photo">
+            <div class="photo-row">
+                <img src="snapchat.jpg" alt="George's photo">
+                <img src="bbc.jpg" alt="BBC photo">
+            </div>
         </div>
         
         <div class="bio">
